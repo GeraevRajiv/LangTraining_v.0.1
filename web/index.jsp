@@ -13,7 +13,7 @@
 <body>
 
 <h1>Авторизация</h1>
-<form action="Authentication" method="POST" autocomplete="on">
+<form action="Authenticationn" method="POST" autocomplete="on">
     <div id="loginBox">
         <p><strong>Ваш логин:</strong>
             <input placeholder="Введите логин" type="text" size="20" name="j_username"></p>
