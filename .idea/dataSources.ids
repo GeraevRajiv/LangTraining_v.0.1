@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="PostgreSQL - innopolis@localhost" uuid="972f6be7-c183-4f4c-ab83-088ee8336e3f">
+    <database-info product="PostgreSQL" version="9.6.0" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+      <database id="1" name="innopolis">
+        <object-id>16384</object-id>
+        <visible>1</visible>
+      </database>
+      <database id="2" name="postgres">
+        <object-id>12401</object-id>
+      </database>
+      <schema id="3" parent="1" name="public">
+        <object-id>2200</object-id>
+        <visible>1</visible>
+        <introspection-state-number>588</introspection-state-number>
+        <introspection-timestamp>2016-11-06.16:07:51.968</introspection-timestamp>
+      </schema>
+      <schema id="4" parent="1" name="pg_catalog">
+        <object-id>11</object-id>
+      </schema>
+      <schema id="5" parent="1" name="pg_toast">
+        <object-id>99</object-id>
+      </schema>
+      <schema id="6" parent="1" name="pg_temp_1">
+        <object-id>11848</object-id>
+      </schema>
+      <schema id="7" parent="1" name="pg_toast_temp_1">
+        <object-id>11849</object-id>
+      </schema>
+      <schema id="8" parent="1" name="information_schema">
+        <object-id>12113</object-id>
+        <introspection-state-number>492</introspection-state-number>
+        <introspection-timestamp>2016-11-06.01:15:27.833</introspection-timestamp>
+      </schema>
+      <sequence id="9" parent="3" name="users_id_seq">
+        <object-id>16440</object-id>
+        <state-number>588</state-number>
+      </sequence>
+      <table id="10" parent="3" name="users">
+        <object-id>16442</object-id>
+        <state-number>588</state-number>
+      </table>
+      <column id="11" parent="10" name="id">
+        <state-number>588</state-number>
+        <mandatory>1</mandatory>
+        <data-type>smallint|0</data-type>
+        <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="12" parent="10" name="username">
+        <state-number>588</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="13" parent="10" name="password">
+        <state-number>588</state-number>
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <index id="14" parent="10" name="users_pkey">
+        <object-id>16446</object-id>
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="15" parent="10" name="users_pkey">
+        <object-id>16447</object-id>
+        <columns>username</columns>
+        <underlying-index>users_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
