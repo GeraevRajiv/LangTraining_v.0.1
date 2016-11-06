@@ -20,7 +20,6 @@ public class PostgreDaoFactory implements DaoFactory {
             e.printStackTrace();
         }
     }
-//// TODO: 06.11.2016 dsdgsgs
     public Connection getConnection() {
         Connection connection = null;
         try {
