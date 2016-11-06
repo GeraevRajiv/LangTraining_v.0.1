@@ -18,6 +18,7 @@ public class Authentication extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        System.out.println();
 
     }
 }
